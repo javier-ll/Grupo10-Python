@@ -1,0 +1,94 @@
+header {
+    width: 100%;
+    overflow: hidden;
+    background: #5b9362;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    color: #f2f2f2;
+    font-size: 50px;
+    line-height: 10px;
+    float: left;
+}
+
+header nav {
+    float: right;
+    line-height: 10px;
+}
+
+header nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-family: 'Neue Helvetica Paneuropean 65 Medium', sans-serif;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+header nav a:hover {
+    background: #c75db7;
+    border-radius: 50px;
+}
+
+.header2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: auto;
+}
+
+
+.header2 img {
+    height: 90px;
+	width: auto;
+    transition: width 0.5s; /* Agregar una transición suave */	
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    align-items: center; /* Centra verticalmente */
+    display: flex;
+    justify-content: space-between; /* Espacio entre la imagen y el menú */
+}
+
+header img, .header2 img{
+    margin: 10px 0; /* Margen de 20px tanto arriba como abajo de la imagen */
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+
+@media screen and (max-width: 950px) {
+    .wrapper{
+        display: block;
+    }
+	header .logo,
+	header nav {
+		width:100%;
+		text-align:center; /*Centramos el menu y el logotipo*/
+		line-height:50px;
+	}
+
+	.header2 {
+		height:auto;
+	}
+
+	.header2 .logo,
+	.header2 nav {
+		line-height:50px;
+	}
+}
+
