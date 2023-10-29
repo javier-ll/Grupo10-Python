@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets\css\header.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\quienes.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\productos.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\contacto_footer.css">
+    <script src="assets\js\header.js"></script>
+    <script src="assets\js\productos.js" defer></script>
+    <script src="assets\js\contacto.js"defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Rústica Vivero de Montaña</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="assets\media\images\vivero_logo.jpg" alt="Logo de vivero" width="300" height="200">
+            </div>
+            
+            <nav>
+                <a href="#Inicio">Inicio</a>
+                <a href="#Productos">Productos</a>
+                <a href="#Quienes_somos">Quiénes somos</a>
+                <a href="#titulo_contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <section id="Inicio">
+      <div class="contenedor-imagen-frase">
+        <img src="assets\media\images\frase.jpg" alt="vivero_carru">
+        <div class="frase">La naturaleza es el mejor diseño</div>
+      </div>
+    </section>
+    <section class="Carrusel">
+        <div class="slider">
+            <div class="slide">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="st first">
+                    <img src="assets\media\images\carrusel1.jpg" alt="vivero_carru">
+                    <div class="texto">Revalorizamos la flora nativa</div>
+                </div>
+                <div class="st">
+                    <img src="assets\media\images\carrusel2.jpg" alt="">
+                    <div class="texto">Fomentamos un trabajo horizontal y autogestivo</div>
+                </div>
+                <div class="st">
+                    <img src="assets\media\images\carrusel4.jpg" alt="">
+                    <div class="texto">Promovemos la educación ambiental a través de actividades y talleres</div>
+                </div>
+                <div class="st">
+                    <img src="assets\media\images\plantas.jpg" alt="">
+                    <div class="texto">Establecemos colaboraciones con diversas entidades y actores locales</div>
+                </div>
+                <div class="nav-auto">
+                    <div class="a-b1"></div>
+                    <div class="a-b2"></div>
+                    <div class="a-b3"></div>
+                </div>
+            </div>
+
+            <div class="nav-m">
+                <label for="radio1" class="m-btn"></label>
+                <label for="radio2" class="m-btn"></label>
+                <label for="radio3" class="m-btn"></label>
+            </div>
+        </div>
+    </section>
+    <section id="Productos">
+
+      <h3 class="title"> Productos </h3>
+   
+      <div class="products-container">
+   
+         <div class="product" data-name="p-1">
+            <img src="assets\media\images\1.png" alt="">
+            <h3>Zuccagnia punctata</h3>
+            <div class="price">$200.00</div>
+         </div>
+   
+         <div class="product" data-name="p-2">
+            <img src="assets\media\images\2.jpg" alt="">
+            <h3>Tetraglochin alatum</h3>
+            <div class="price">$100.00</div>
+         </div>
+   
+         <div class="product" data-name="p-3">
+            <img src="assets\media\images\3.jpg" alt="">
+            <h3>Grindelia chiloensis</h3>
+            <div class="price">$150.00</div>
+         </div>
+   
+         <div class="product" data-name="p-4">
+            <img src="assets\media\images\4.jpg" alt="">
+            <h3>Adesmia pinifolia</h3>
+            <div class="price">$180.00</div>
+         </div>
+   
+         <div class="product" data-name="p-5">
+            <img src="assets\media\images\5.jpg" alt="">
+            <h3>Baccharis grisebachi</h3>
+            <div class="price">$120.00</div>
+         </div>
+   
+         <div class="product" data-name="p-6">
+            <img src="assets\media\images\6.jpg" alt="">
+            <h3>Senna aphylla</h3>
+            <div class="price">$110.00</div>
+         </div>
+         <div class="product" data-name="p-7">
+           <img src="assets\media\images\7.jpg" alt="">
+           <h3>Atriplex lampa</h3>
+           <div class="price">$150.00</div>
+        </div>
+        <div class="product" data-name="p-8">
+           <img src="assets\media\images\8.jpg" alt="">
+           <h3>Adesmia trijuga</h3>
+           <div class="price">$160.00</div>
+        </div>
+        <div class="product" data-name="p-9">
+           <img src="assets\media\images\9.jpg" alt="">
+           <h3>Hyalis Argéntea</h3>
+           <div class="price">$125.00</div>
+        </div>
+   
+      </div>
+   
+    </section>
+   <div class="products-preview">
+   
+      <div class="preview" data-target="p-1">
+         <i class="fas fa-times"></i>
+         <img src="assets\media\images\1.png" alt="">
+         <h3>Zuccagnia punctata</h3>
+         <p>Mejor conocido como Pus Pus, es un arbusto perenne que se destaca por sus flores amarillas brillantes y sus frutos en forma de vainas alargadas. Es conocido por su resistencia a terrenos secos y su uso tradicional en infusiones medicinales.</p>
+         <div class="price">$200.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-2">
+         <i class="fas fa-times"></i>
+         <img src="assets\media\images\2.jpg" alt="">
+         <h3>Tetraglochin alatum</h3>
+         <p>Esta planta es reconocida por sus tallos alados, que le dan la apariencia de una espina de pescado. Se encuentra comúnmente en terrenos rocosos y tiene un atractivo singular en jardines de rocas.</p>
+         <div class="price">$100.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-3">
+         <i class="fas fa-times"></i>
+         <img src="assets\media\images\3.jpg" alt="">
+         <h3>Grindelia chiloensis</h3>
+         <p>La Melosa es una planta herbácea con flores amarillas que se destaca por su uso tradicional en la medicina natural debido a sus propiedades antiinflamatorias y calmantes.</p>
+         <div class="price">$150.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-4">
+         <i class="fas fa-times"></i>
+         <img src="assets\media\images\4.jpg" alt="">
+         <h3>Adesmia pinifolia</h3>
+         <p>Esta planta, conocida como Leña Amarillo, es un arbusto de hojas pequeñas y amarillas que crece en zonas áridas. Se caracteriza por su aroma particular y su resistencia a suelos secos.</p>
+         <div class="price">$180.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-5">
+         <i class="fas fa-times"></i>
+         <img src="assets\media\images\5.jpg" alt="">
+         <h3>Baccharis grisebachi</h3>
+         <p>La Quilcha Mali es un arbusto de hojas verdes brillantes que produce pequeñas flores blancas. Es valorado por su capacidad para atraer mariposas y aves, convirtiéndolo en una excelente adición a jardines naturales.</p>
+         <div class="price">$120.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+   
+      <div class="preview" data-target="p-6">
+         <i class="fas fa-times"></i>
+         <img src="assets\media\images\6.jpg" alt="">
+         <h3>Senna aphylla</h3>
+         <p>La Pichana es un arbusto que destaca por sus flores amarillas brillantes y su capacidad para prosperar en suelos pobres. Es valorado por su resistencia a condiciones adversas y su atractivo ornamental.</p>
+         <div class="price">$110.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+         </div>
+      </div>
+      <div class="preview" data-target="p-7">
+       <i class="fas fa-times"></i>
+       <img src="assets\media\images\7.jpg" alt="">
+       <h3>Atriplex Lampa</h3>
+       <p>La Atriplex Lampa es una planta adaptada a suelos salinos, con hojas plateadas y dentadas. Es apreciada por su capacidad para controlar la erosión del suelo y su resistencia a condiciones climáticas extremas.</p>
+       <div class="price">$150.00</div>
+       <div class="buttons">
+          <a href="#" class="buy">buy now</a>
+          <a href="#" class="cart">add to cart</a>
+       </div>
+    </div>
+    <div class="preview" data-target="p-8">
+       <i class="fas fa-times"></i>
+       <img src="assets\media\images\8.jpg" alt="">
+       <h3>Adesmia Trijuga</h3>
+       <p>Esta planta es un arbusto de hojas verdes que produce flores amarillas y se encuentra comúnmente en terrenos montañosos. Se destaca por su valor ornamental y su resistencia a condiciones climáticas variables.</p>
+       <div class="price">$160.00</div>
+       <div class="buttons">
+          <a href="#" class="buy">buy now</a>
+          <a href="#" class="cart">add to cart</a>
+       </div>
+    </div>
+    <div class="preview" data-target="p-9">
+       <i class="fas fa-times"></i>
+       <img src="assets\media\images\9.jpg" alt="">
+       <h3>Hyalis Argéntea</h3>
+       <p>El Olivillo es un árbol pequeño que presenta hojas plateadas, con una apariencia llamativa. Es apreciado por su madera dura y resistente, así como por su valor ornamental en jardinería.</p>
+       <div class="price">$125.00</div>
+       <div class="buttons">
+          <a href="#" class="buy">buy now</a>
+          <a href="#" class="cart">add to cart</a>
+       </div>
+    </div>
+   
+   </div>
+    
+    <section id="Quienes_somos">
+        <!-- Contenido de la sección "Quiénes Somos" -->
+        <h1>Quiénes Somos</h1>
+        <div class="container">
+            <div class="columna">
+                <h2>Nuestra Historia</h2>       
+                <!-- Contenido de "¿Por qué RÚSTICA?" -->
+                <p>RUSTICA Vivero de Montaña tuvo sus inicios a principios de 2021 y surge de la mano del colectivo Sumá Nativas, quienes tienen como objetivo principal desarrollar e implementar un programa de restauración en áreas degradadas en la Cuenca Alta del Río Mendoza. Proyecto que a raíz de un devastador incendio ocurrido en 2019, acerca esta iniciativa de creación de un vivero de flora nativa en Potrerillos. Por lo tanto, el Vivero Rústica es el fruto de trabajo conjunto y la colaboración de vecinos y vecinas de Potrerillos.</p>
+                                <!-- Más contenido... -->
+                <img class="image" src="assets\media\images\5vivero.jpg" alt="Dueñas del vivero"> 
+            </div>
+
+            <div class="columna">
+                <img class="image" src="assets\media\images\plantas.jpg" alt="Plantas">               
+                <!-- Contenido de "Nuestra Historia" -->
+                <h2>¿Por qué RÚSTICA?</h2>
+                <p>Después de mucho reflexionar y debatir entre mates, llegamos a la conclusión de que este nombre refleja perfectamente nuestra pasión por las plantas autóctonas y el encanto rústico de la naturaleza y el espacio que habitamos.</p>
+            </div>
+        </div>
+    </section>
+
+    <h1 id="titulo_contacto"> Contacto </h1>
+    <section id="Contacto">
+      <div class="formulario">
+        
+        <div class="container">
+          
+          <form class="row g-3 needs-validation" action="https://formspree.io/f/xaygvqkd" method="POST" novalidate >
+
+            <div class="col-6">
+                <label for="Nombre" class="form-label">Nombre</label>
+                <input type="text" id="nombre" name="Nombre" class="form-control" placeholder="Escribe tu nombre" required >
+              
+                <div class="valid-feedback">
+                    Todo bien
+                </div>
+
+                <div class="invalid-feedback">
+                    Es necesario completar este campo
+                </div>
+
+            </div>  
+
+            <div class="col-6">
+                <label for="Apellido" class="form-label">Apellido</label>
+                <input name="Apellido" id="Apellido" class="form-control" placeholder="Escribe tu apellido" required>
+              
+                <div class="valid-feedback">
+                  Todo bien
+                </div>
+
+                <div class="invalid-feedback">
+                  Es necesario completar este campo
+                </div>
+
+            </div>
+
+            <div class="col-12" class="mt-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" name="Email" id="Email" class="form-control" placeholder="Escribe tu email" required >
+
+                <div class="valid-feedback">
+                  No compartiremos tu correo con ninguna persona
+                </div>
+
+                <div class="invalid-feedback">
+                  Es necesario completar este campo
+                </div>
+
+            </div>  
+
+            <div class="col-6">
+                <label for="Ciudad" class="form-label">Ciudad</label>
+                <input type="text" name="Ciudad" id="Ciudad" class="form-control" placeholder="Escribe tu ciudad" required>
+
+                <div class="valid-feedback">
+                  Todo bien
+                </div>
+
+                <div class="invalid-feedback">
+                  Es necesario completar este campo
+                </div>
+
+            </div>
+
+            <div class="col-6">
+                <label for="Telefono" class="form-label">Teléfono</label>
+                <input type="number" name="Teléfono" id="Telefono" class="form-control" placeholder="Escribe tu teléfono" required>
+              
+                <div class="valid-feedback">
+                  Todo bien
+                </div>
+
+                <div class="invalid-feedback">
+                  Es necesario completar este campo
+                </div>
+
+            </div>
+
+            <div class="col-12 mb-3">
+              <label for="Consulta" class="form-label">Dejanos tu consulta aquí</label>
+              <textarea class="form-control" name="Teléfono" id="Consulta" rows="3"></textarea>
+            
+            </div>
+
+            <div class="col-12">
+            <button type="submit" class="btn-primary">
+              Enviar
+            </button>
+            </div>
+
+            <div class="imagen-cont">
+                <img src="assets\media\images\vivero_logo.jpg" alt="">
+
+            </div>
+
+          </form>
+        </div>
+      </div>
+  
+    </section>
+
+    <footer class="footer">
+
+        <div class="mapa">
+          <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.0982771848458!2d-69.26561782514206!3d-33.00118437464386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967deb6088eee785%3A0x8c46e673a7b2cdbb!2sClub%20Social%20y%20Deportivo%20El%20Plata!5e0!3m2!1ses!2sar!4v1697498564456!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>  
+        </div>
+        
+        <div class="redes">
+          
+          <p class="redes2">
+            <i class="fa-solid fa-phone"></i>   <strong>261 503-6114 </strong> 
+          </p>
+          <p class="redes2">
+            <i class="fa-brands fa-instagram"></i> <a class="faceins" href="https://www.instagram.com/rustica_vivero_montana/" target="_blank" rel="noopener noreferrer" class="instagram"><strong>Rustica_vivero_montana</strong></a>
+          </p>
+          <p class="redes2">
+            <i class="fa-brands fa-facebook"> <a  class="faceins" href="https://www.facebook.com/rusticavivero" target="_blank" class="facebook"> <strong>Rustica Vivero de Montaña</strong> </a></i>  
+          </p>
+          <p class="redes2">
+            <i class="fa-solid fa-location-dot"></i>  <strong> "Club Social y Deportivo El Plata", en la intersección de la Ruta 89 y <br>  la Calle Los Negritos de las Vegas, Potrerillos, Luján de Cuyo, Mendoza.</strong> 
+          </p>
+
+        </div>
+
+        <div class="cajalogo">
+          <img class="logoimg" src="assets\media\images\logoblanco.png" alt="">
+        </div>
+
+    </footer>
+    
+    
+</body>
+</html>
