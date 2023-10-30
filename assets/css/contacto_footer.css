@@ -7,6 +7,7 @@
     font-family: 'Kanit', sans-serif;
     display: flex;
     background-color: rgb(225, 189, 224);
+    position: relative;
 }
 
 #Contacto .formulario {
@@ -28,6 +29,7 @@
     padding:2rem 2rem;
     margin:0;
     text-align: center;
+    position: relative;
 }
 
 #Contacto .container {
@@ -72,6 +74,7 @@
     width: 100%;
     background-color: rgb(76, 29, 62);
     overflow: visible;
+    position: relative;
 }
 
 .mapa {
@@ -126,42 +129,13 @@
     #Contacto .container {
         right: 13rem;
     }
-}
-
-@media screen and (max-width: 912px) and (max-height: 1368px) {
-    * {
-        font-size: 1.35rem;
-    }
-    #Contacto {
-        height: 36rem;
-    }
-    #Contacto .container {
-        right: 10rem;
-    }
-    #Contacto .imagen-cont {
-        left: 20.5rem;
-        bottom: 55vh;
-    }
-    .redes,.cajalogo{
-        height: 28.4rem;
-    }
-    .logoimg {
-        left: 40%;
-        top: 3rem;
-    }
-}
-@media screen and (max-width: 1024px) {
     #Contacto .imagen-cont {
         left: 37.5rem;
     }
 }
-
 @media screen and (max-width: 912px) {
     * {
         font-size: 1.307rem;
-    }
-    #Contacto {
-        height: 36rem;
     }
     #Contacto .container {
         right: 10rem;
@@ -175,6 +149,40 @@
     }
     .redes,.cajalogo{
         height: 24rem;
+    }
+}
+@media screen and (max-width: 912px) and (max-height: 1368px) {
+    * {
+        font-size: 2.7rem;
+    }
+    #titulo_contacto{
+        font-size: 5.5rem;
+    }
+    #Contacto .container {
+        right: 15rem;
+    }
+    #Contacto {
+        height: 45rem;
+    }
+    #Contacto .imagen-cont {
+        left: 52rem;
+    }
+    #Contacto img {
+        width: 28rem;
+    }
+    .footer{
+        height: 108rem;
+    }
+    .redes,.cajalogo{
+        height: 28.4rem;
+    }
+    .logoimg {
+        left: 40%;
+        top: 3rem;
+        width: 28rem;
+    }
+    .form-label{
+        font-size: 2.7rem;
     }
 }
 @media screen and (max-width: 820px){
@@ -287,12 +295,21 @@
         left: 15.1rem;
         bottom: 64vh;
     }
-    .redes,
-    .cajalogo{
-        height: 24.8rem;
+    .footer{
+        height: 67rem;
+    }
+    .redes,.cajalogo{
+        height: 28.4rem;
+    }
+    .redes p{
+        font-size: 2rem;
     }
     .logoimg {
-        width: 7rem;
-        top: 6rem;
+        left: 40%;
+        top: 3rem;
+        width: 10rem;
+    }
+    .form-label{
+        font-size: 1.2rem;
     }
 }
