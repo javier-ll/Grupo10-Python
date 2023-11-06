@@ -10,6 +10,8 @@ header {
     width: 100%;
     overflow: hidden;
     background: #753c73;
+    position: relative;
+    z-index: 1;
 }
 
 header .logo {
@@ -77,6 +79,7 @@ header img,
     text-align: center;
     background-color: rgb(225, 189, 224);
     padding-top:1.25rem;
+    z-index: 2;
   }
   
   .contenedor-imagen-frase {
@@ -89,8 +92,7 @@ header img,
   .contenedor-imagen-frase img{
     width: 100%; /* Toma el 100% del ancho del contenedor */
     height: auto;
-    object-fit: cover; /* Recorta la imagen para ajustarse al contenedor */
-    
+    object-fit: cover; /* Recorta la imagen para ajustarse al contenedor */    
   }
   
   .frase {
@@ -117,6 +119,7 @@ header img,
     justify-content: center;
     align-items: center;
     background-color: rgb(225, 189, 224);
+    z-index: 5;
 }
 .Carrusel .slider{
     width: 800px;
