@@ -12,18 +12,29 @@ header {
     background: #753c73;
     position: relative;
     z-index: 1;
+    transition: height ease 0.5s; 
+   
 }
 
 header .logo {
     color: #f2f2f2;
     font-size: 3.125rem;
+    max-width: 400px;
     line-height: 0.625rem;
     float: left;
+}
+
+header .imagen-logo {
+    height: 25vh;
+    width: auto;
+    padding-left: 0px;
+    transition: height 0.3s ease;
 }
 
 header nav {
     float: right;
     line-height: 0.625rem;
+    transition: height 0.2s ease ; 
 }
 
 header nav a {
@@ -35,7 +46,7 @@ header nav a {
     font-size: 1.25rem;
     font-family: 'Neue Helvetica Paneuropean 65 Medium', sans-serif;
     font-weight: bold;
-    transition: all 300ms ease;
+    transition: all 0.3s ease;
 }
 
 header nav a:hover {
@@ -47,15 +58,16 @@ header nav a:hover {
     position: fixed;
     top: 0;
     left: 0;
+    transition: height ease 0.5s; 
     width: 100%;
     z-index: 999;
     height: auto;
 }
 
 .header2 img {
-    height: 5.625rem;
+    height: 5rem;
     width: auto;
-    transition: width 0.5s; /* Agregar una transición suave */
+    transition: height ease 0.5s; /* Agregar una transición suave */
 }
 
 .wrapper {
@@ -70,7 +82,7 @@ header nav a:hover {
 
 header img,
 .header2 img {
-    margin: 0.625rem 0; /* Margen de 1rem tanto arriba como abajo de la imagen */
+    margin: 1rem 0 1rem 0; /* Margen de 1rem tanto arriba como abajo de la imagen */
 }
 
 /* Inicio*/
@@ -91,7 +103,7 @@ header img,
   }
   .contenedor-imagen-frase img{
     width: 100%; /* Toma el 100% del ancho del contenedor */
-    height: auto;
+    height: 30vh;
     object-fit: cover; /* Recorta la imagen para ajustarse al contenedor */    
   }
   
@@ -249,16 +261,17 @@ header img,
    
 }
 
-@media screen and (max-width: 1000px) {
-    /* Header */
+/* @media screen and (max-width: 1000px) {
+    Header 
     .wrapper {
         display: block;
     }
     header .logo,
     header nav {
         width: 100%;
-        text-align: center; /* Centramos el menú y el logotipo */
-        line-height: 3.125rem; /* 50px */
+        text-align: center; Centramos el menú y el logotipo 
+        line-height: 3.125rem;  50px 
+        font-size: 0.5rem;
     }
     header nav a{
         font-size: 3rem;
@@ -279,12 +292,13 @@ header img,
 
     .header2 .logo,
     .header2 nav {
-        line-height: 3.125rem; /* 50px */
+        line-height: 3.125rem; 
     }
-}
-@media screen and (max-width: 540px){
+}  */
+
+/*@media screen and (max-width: 540px){
     .contenedor-imagen-frase {
-        width: 100%; /* Ancho deseado del contenedor */
+        width: 100%;  Ancho deseado del contenedor 
     }
     header img{
         height: 22rem;
@@ -303,7 +317,7 @@ header img,
     }
 }
 
-@media screen and (max-width: 280px) {
+/* @media screen and (max-width: 280px) {
     *{
         font-size: 7.9rem;
     }
@@ -314,5 +328,98 @@ header img,
         font-size: 1.8rem;
         top: 4rem;
     }
+
+} */
+
+@media only screen and (max-width: 1000px) {
+    /* Estilo general del header */
+header {
+    width: 100%;
+    overflow: hidden;
+    background: #753c73;
+    position: relative;
+    z-index: 1;
+    transition: height ease 0.5s; 
+}
+
+/* Estilo del logo */
+header .logo {
+    color: #f2f2f2;
+    font-size: 3.125rem;
+    display: inline-block;
+    max-width: 90%; /* Ajuste para dispositivos móviles */
+    line-height: 1.5; /* Ajuste para dispositivos móviles */
+    float: none; /* Evitar flotar en dispositivos móviles */
+    margin: 10px auto; /* Centrar en dispositivos móviles */
+}
+
+/* Estilo de la imagen del logo */
+header .imagen-logo {
+    height: 20vh;
+    width: auto; /* Ocupar el ancho completo del contenedor */
+    padding-left: 0;
+    transition: height 0.3s ease;
+}
+
+/* Estilo de la navegación */
+header nav {
+    float: none; /* Evitar flotar en dispositivos móviles */
+    text-align: center; /* Centrar en dispositivos móviles */
+    font-size: 3.125rem;
+    padding-bottom: 10px;
+}
+
+/* Estilo de los enlaces de navegación */
+header nav a {
+    display: inline-block; /* Convertir a bloques para ocupar el ancho completo */
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.625rem 0; /* Ajustar el relleno en dispositivos móviles */
+    font-size: 1.5rem;
+    font-family: 'Neue Helvetica Paneuropean 65 Medium', sans-serif;
+    /* transition: all 0.3s ease; */
+}
+
+/* Estilo al pasar el mouse sobre los enlaces de navegación */
+header nav a:hover {
+    background: #5b9362;
+    border-radius: 0; /* Eliminar el borde redondeado en dispositivos móviles */
+}
+
+/* Estilo del header fijo */
+.header2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: height ease 0.5s; 
+    width: 100%;
+    z-index: 999;
+    height: auto;
+}
+
+/* Estilo de la imagen dentro del header fijo */
+.header2 img {
+    height: 15vh; /* Reducir la altura para dispositivos móviles */
+    width: auto;
+    transition: height ease 0.5s; /* Agregar una transición suave */
+}
+
+/* Estilo del wrapper general */
+.wrapper {
+    width: 90%;
+    max-width: 100%; /* Ocupar el ancho completo del contenedor padre */
+    margin: auto;
+    overflow: hidden;
+    align-items: center; /* Centra verticalmente */
+    display: flex;
+    flex-direction: column; /* Cambiar a dirección de columna para dispositivos móviles */
+}
+
+/* Margen de la imagen en dispositivos móviles */
+header img,
+.header2 img {
+    margin: 1rem 0; /* Margen de 1rem arriba y abajo de la imagen en dispositivos móviles */
+}
 
 }
