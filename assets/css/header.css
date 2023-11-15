@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Jost:wght@500&family=Kanit:ital,wght@0,300;1,500&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
 body {
     font-family: Helvetica, sans-serif;
@@ -89,7 +91,7 @@ header img,
 #Inicio {
     position: relative;
     text-align: center;
-    background-color: rgba(155, 188, 159, 0.5);
+    background-color: rgb(158, 181, 162);
     padding-top: 0rem;
     z-index: 2;
   }
@@ -110,8 +112,8 @@ header img,
   }
   
   .frase {
-    font-family: 'Neue Helvetica Paneuropean 65 Medium', sans-serif;
-    font-size: 2rem;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 3rem;
     font-weight: 999;
     position: absolute;
     top: 50%; /* Ajusta la posición verticalmente */
