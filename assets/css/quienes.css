@@ -30,11 +30,12 @@
 }
 
 #Quienes_somos .image{
-    height: 290px;
+    width: 100%;
+    height: auto;
 }
 
 #Quienes_somos p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.5;
 }
 #Quienes_somos .container{
@@ -49,6 +50,19 @@
     width: 50%; /* Divide el contenedor en dos columnas igualmente */
     vertical-align: top; /* Alinea el contenido en la parte superior */
     padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Quienes somos*/
+    #Quienes_somos h1{
+        font-size: 3.5rem;
+    }
+    #Quienes_somos h2 {
+        font-size: 3rem;
+    }
+    #Quienes_somos p {
+        font-size: 1.7rem;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -72,48 +86,41 @@
         padding: 0;
         width: 100%;
     }
-    #Quienes_somos .image{
-        width: 68rem;
-        height: auto;
-    }
     
 }
 
-@media screen and (max-width: 414px) {
-    /* Quienes somos*/
-    #Quienes_somos .image{
-        width: 22rem;
-        height: 15rem;
+@media screen and (max-width:540px) {
+    #Quienes_somos h2 {
+        font-size: 4rem;
     }
-    
+    #Quienes_somos p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:430px) {
+    #Quienes_somos p {
+        font-size: 2.5rem;
+    }
 }
 
 @media screen and (max-width: 412px) {
     /* Quienes somos*/
     #Quienes_somos h2 {
-        font-size: 1.4rem;
+        font-size: 4rem;
     }
     #Quienes_somos p {
-        font-size: 1.2rem;
-    }
-    #Quienes_somos .image{
-        width: 22.1rem;
-        height: 15rem;
-    }
-    
+        font-size: 2.2rem;
+    }    
 }
 
 @media screen and (max-width: 375px) {
     /* Quienes somos*/
     #Quienes_somos h2 {
-        font-size: 1.4rem;
+        font-size: 3.4rem;
     }
     #Quienes_somos p {
-        font-size: 1rem;
-    }
-    #Quienes_somos .image{
-        width: 20.4rem;
-        height: 14rem;
+        font-size: 2rem;
     }
     
 }
@@ -122,10 +129,6 @@
     /* Quienes somos*/
     #Quienes_somos .container{
         font-size: 2rem;
-    }
-    #Quienes_somos .image{
-        width: 17.4rem;
-        height: 13.5rem;
     }
     
 }

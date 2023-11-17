@@ -80,6 +80,7 @@
     background-color: rgb(76, 29, 62);
     overflow: visible;
     position: relative;
+    padding: 0 0 1rem 0;
 }
 
 .mapa {
@@ -98,6 +99,7 @@
     text-align: center;
     align-items: center;
     padding: 1.25rem; /* 20px */
+    font-size: 1.4rem;
 }
 
 .cajalogo {
@@ -127,12 +129,53 @@
 }
 
 /* Cambios en font-size para distintos tamaños de pantalla */
+@media screen and (max-width: 1024px){
+    #titulo_contacto{
+        font-size: 3.5rem;
+    }
+    #Contacto .container{
+        width: 67%;
+    }
+    #Contacto .formulario{
+        height: auto;
+    }
+    #Contacto .form-control {
+        height:4vh;
+        font-size: 1.4rem;
+    }
+    #Contacto .form-label {
+        font-size: 2.5rem;
+    }
+    #Contacto .btn-primary {
+        width: 14.5rem;
+        height: 4.5rem;
+        font-size: 2.8rem;
+    }
+    #Contacto .imagen-cont{
+        width:33%;
+        top: 12rem;
+    }
+
+    .redes{
+        font-size: 1.5rem;
+    }
+    .redes, .cajalogo{
+        height: 25vh;
+    }
+    .logoimg{
+        width: 19.2rem;
+    }
+}
  @media screen and (max-width: 1000px) {
-    #Contacto {
-        height: 70vh;
+    #Contacto h1{
+        font-size: 4.5rem;
+    }
+    #Contacto .formulario{
+        height: 42vh;
     }
     #Contacto .container {
-        height: 60vh;
+        width: 50%;
+        height: 57vh;
         position: relative;
         top: 4%;
         left: 2%;
@@ -141,15 +184,48 @@
     }
     #Contacto .form-control {
         height:4vh;
+        font-size: 2rem;
     }
     #Contacto .form-label {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
-    #Contacto .imagen-cont {
-        display: none;
+    #Contacto .btn-primary {
+        width: 14.5rem;
+        height: 4.5rem;
+        font-size: 2.8rem;
+    }
+    .redes{
+        font-size: 2.8rem;
+    }
+    .redes, .cajalogo{
+        height: 27hv;
+        width: 42%;
+    }
+    .cajalogo img{
+        width: 32.8rem;
+        top:7rem;
+    }
+}
 
+@media screen and (max-width: 912px) and (max-height: 1368px) {
+    #titulo_contacto{
+        font-size: 5.5rem;
     }
-} 
+    #Contacto {
+        height: 100%;
+    }
+    #Contacto .formulario form {
+        width:53%;
+    }
+    #Contacto .imagen-cont{
+        width:72%;
+        left: 34vh;
+    }
+    .redes,.cajalogo{
+        height: 27vh;
+    }
+  }
+
 @media screen and (max-width: 768px) {
     
     #Contacto .container {
@@ -162,76 +238,111 @@
         font-size: 1.5rem;
     }
     #Contacto .imagen-cont {
-        display: none;
-        width: 0%;
+        top: 1vh;
+        left: 36vh;
+        width: 50%;
     }
 
     .redes,.cajalogo{
-        height: 24rem;
+        height: 50vh;
+    }
+    .cajalogo img {
+        width: 31.8rem;
     }
 }
-/* @media screen and (max-width: 912px) and (max-height: 1368px) {
-    * {
-        font-size: 2.7rem;
-    }
-    #titulo_contacto{
-        font-size: 5.5rem;
-    }
-    #Contacto .container {
-        right: 15rem;
-    }
-    #Contacto {
-        height: 45rem;
-    }
-    #Contacto .imagen-cont {
-        left: 52rem;
-    }
-    #Contacto img {
-        width: 28rem;
-    }
-    .footer{
-        height: 108rem;
-    }
-    .redes,.cajalogo{
-        height: 28.4rem;
-    }
-    .logoimg {
-        left: 40%;
-        top: 3rem;
-        width: 28rem;
-    }
-    .form-label{
-        font-size: 2.7rem;
-    } */
- /* } */
 
  @media screen and (max-width: 665px) {
-    
-     #Contacto .container {
-        position: relative;
-        align-items: center;
-        width: 70%;
+    #Contacto .formulario {
+        height: 53vh;
     }
-    
+    #Contacto .formulario .container{
+        width: 95%;
+        padding: 0;
+        margin: 0;
+    }
     #Contacto .form-label {
-        font-size: 1rem;
+        font-size: 1.5rem;
+    }
+    #Contacto .form-control {
+        height: 4vh;
+        font-size: 1.3rem;
+    }
+    #Contacto .imagen-cont {
+        top: 10vh;
+        left: 36vh;
+    }
+    #Contacto .imagen-cont img{
+        width:80%;
+    }
+    #Contacto .btn-primary {
+        width: 7.5rem;
+        height: 3.5rem;
+        font-size: 1.8rem;
     }
 
-    #Contacto .imagen-cont {
-        display: none;
-        width: 0%;
+    .redes{
+        font-size: 2rem;
+    }
+    .redes,.cajalogo{
+        height: 50vh;
+    }
+    .cajalogo img {
+        width: 22rem;
+        height: 33vh;
     }
 
 }
-
-
-@media screen and (max-width: 414px) {
-    #Contacto .imagen-cont img{
-        width: 14rem;
+@media screen and (max-width: 430px) {
+    #Contacto .form-label {
+        font-size: 2.5rem;
+    }
+    #Contacto .form-control {
+        height: 4vh;
+        font-size: 1.8rem;
     }
     #Contacto .imagen-cont {
-        left: 23.7rem;
+        top: 10vh;
+        left: 22vh;
+    }
+
+    .redes{
+        width: 40%;
+    }
+    .redes strong{
+        font-size: 2rem;
+    }
+    .redes,.cajalogo{
+        height: 50vh;
+    }
+    .cajalogo{
+        width: 60%;
+    }
+    .cajalogo img {
+        width: 21rem;
+        height: 31vh;
+        left: 3rem;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #Contacto .formulario .container{
+        width: 95%;
+        padding: 0;
+        margin: 0;
+    }
+    #Contacto .imagen-cont {
+        left: 19.7rem;
+        width: 50%;
+        top: 19vh;
         bottom: 71vh;
+    }
+    #Contacto .imagen-cont img {
+        width: 84%;
+        height: 23vh;
+    }
+
+    .cajalogo img {
+        width: 20rem;
     }
 }
 
@@ -239,29 +350,76 @@
     * {
         font-size: 1.04rem;
     }
+    #Contacto .formulario form {
+        width: 55%;
+    }
     #Contacto .imagen-cont img{
         width: 16rem;
     }
     #Contacto .imagen-cont {
-        left: 23.5rem;
+        left: 20.5rem;
+        width: 49%;
         bottom: 72vh;
     }
     .redes,
     .cajalogo{
         height: 24rem;
     }
-    .logoimg {
-        width: 8.031rem;
-        top: 6rem;
+    .redes i{
+        font-size: 2.5rem;
+    }
+    .redes {
+        width: 35%;
+    }
+    .cajalogo img {
+        width: 19.9rem;
+        height: 30rem;
+        top: 13rem;
     }
 }
-@media screen and (max-width: 393px){
+@media screen and (max-width: 390px){
     #Contacto .imagen-cont img{
-        width: 15rem;
+        width: 16rem;
+        height: 27vh;
     }
     #Contacto .imagen-cont {
-        left: 21.5rem;
+        left: 19.5rem;
         bottom: 69vh;
+    }
+
+    .cajalogo img {
+        width: 19.9rem;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    #Contacto .formulario{
+        height: 50vh;
+    }
+    #Contacto .form-label {
+        font-size: 1.5rem;
+    }
+    #Contacto .form-control {
+        font-size: 1.1rem;
+    }
+    #Contacto .imagen-cont {
+        left: 18.9rem;
+    }
+
+    .redes i{
+        font-size: 2.5rem;
+    }
+    .redes strong {
+        font-size: 1.4rem;
+    }
+    .redes {
+        width: 37%;
+    }
+    .cajalogo img {
+        left: 1rem;
+        width: 19.9rem;
+        height: auto;
     }
 }
 
@@ -269,52 +427,50 @@
     * {
         font-size: 0.99rem;
     }
-    .redes,
-    .cajalogo{
-        height: 20.8rem;
-    }
-    .logoimg {
-        width: 7.9rem;
-        top: 6rem;
-    }
     #Contacto .imagen-cont img{
         width: 15rem;
     }
     #Contacto .imagen-cont {
-        left: 19.5rem;
+        left: 18.2rem;
         bottom: 67vh;
+    }
+
+    .redes,
+    .cajalogo{
+        height: 20.8rem;
+    }
+    .cajalogo img {
+        width: 19.7rem;
     }
 }
 
 @media screen and (max-width: 280px) {
-    * {
-        font-size: 0.9rem;
-    }
-    #Contacto .container {
-        right: 5rem;
+    #Contacto .formulario {
+        height: 55vh;
     }
     #Contacto .imagen-cont img{
         width: 12rem;
     }
     #Contacto .imagen-cont {
-        left: 15.1rem;
+        left: 14.1rem;
         bottom: 64vh;
     }
-    .footer{
-        height: 67rem;
+
+    .redes {
+        width: 50%;
     }
-    .redes,.cajalogo{
-        height: 28.4rem;
-    }
-    .redes p{
-        font-size: 2rem;
-    }
-    .logoimg {
-        left: 40%;
-        top: 3rem;
-        width: 10rem;
+    .redes i{
+        font-size: 1.5rem;
     }
     .form-label{
         font-size: 1.2rem;
+    }
+    .cajalogo{
+        width: 30%;
+    }
+    .cajalogo img{
+        width: 10.7rem;
+        height: 16rem;
+        top: 6rem;
     }
 } 

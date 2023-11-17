@@ -174,8 +174,48 @@
    color:#fff;
 }
 
+@media screen and (max-width:1024px){
+   #Productos .products-container .product h3 {
+      font-size: 2.4rem;
+   }
+   #Productos .products-container .product .price {
+      font-size: 2rem;
+   }
+   /*Producto seleccionado*/
+   #Productos .products-preview .preview.active h3{
+      font-size: 2.5rem;
+   }
+   #Productos .products-preview .preview.active .price{
+      font-size: 2rem;
+   }
+   #Productos .products-preview .preview.active p{
+      font-size: 1.2rem;
+   }
+   #Productos .products-preview .preview.active .buttons a{
+      font-size: 1.1rem;
+   }
+}
 
-@media (max-width:991px){
+@media screen and (max-width:1024px) and (max-height:1366px){
+      /*Producto seleccionado*/
+      #Productos .products-preview .preview.active img {
+         height: 18rem;
+     }
+      #Productos .products-preview .preview.active h3{
+         font-size: 3.5rem;
+      }
+      #Productos .products-preview .preview.active .price{
+         font-size: 3rem;
+      }
+      #Productos .products-preview .preview.active p{
+         font-size: 2.2rem;
+      }
+      #Productos .products-preview .preview.active .buttons a{
+         font-size: 2.1rem;
+      }
+   }
+
+@media screen and (max-width:991px){
 
    html{
       font-size: 60%;
@@ -184,8 +224,11 @@
    #Productos .title{
       font-size: 5.5rem;
    }
-   #Productos h3{
-      font-size: 2.8rem;
+   #Productos .products-container .product h3 {
+      font-size: 3.4rem;
+   }
+   #Productos .products-container .product .price {
+      font-size: 4rem;
    }
    #Productos .products-preview .preview img {
       height: 17rem;
@@ -193,12 +236,6 @@
   #Productos .products-preview .preview p {
       font-size: 2.8rem;
    }
-   #Productos .products-preview .preview h3 {
-      font-size: 4rem;
-   }
-   #Productos .products-preview .preview .price {
-      font-size: 4rem;
-  }
    #Productos .products-container {
       grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
       grid-template-rows: 35rem;
@@ -206,13 +243,41 @@
    #Productos .products-container .product{
       height: 35rem;
    }
-   #Productos .products-preview .preview .buttons a {
-      font-size: 3rem;
+   /*Producto seleccionado*/
+   #Productos .products-preview .preview.active {
+      width: 85%;
+   }
+   #Productos .products-preview .preview.active h3{
+      font-size: 4.5rem;
+   }
+   #Productos .products-preview .preview.active .price{
+      font-size: 4.5rem;
+   }
+   #Productos .products-preview .preview.active p{
+      font-size: 4rem;
+   }
+   #Productos .products-preview .preview.active .buttons a{
+      font-size: 4rem;
    }
 
 }
 
-@media (max-width:768px){
+@media screen and (max-width:820px){
+   #Productos .products-preview .preview.active h3{
+      font-size: 3.5rem;
+   }
+   #Productos .products-preview .preview.active .price{
+      font-size: 3.5rem;
+   }
+   #Productos .products-preview .preview.active p{
+      font-size: 3rem;
+   }
+   #Productos .products-preview .preview.active .buttons a{
+      font-size: 3rem;
+   }
+}
+
+@media screen and (max-width:768px){
 
    #Productos .products-preview{
       top:13.5rem;
@@ -229,13 +294,22 @@
 
 }
 
-@media (max-width:450px){
-
-
-   *{
-      font-size:2rem;
+@media screen and (max-width:540px){
+   #Productos .products-preview .preview.active h3{
+      font-size: 2.7rem;
    }
+   #Productos .products-preview .preview.active .price{
+      font-size: 2.7rem;
+   }
+   #Productos .products-preview .preview.active p{
+      font-size: 1.8rem;
+   }
+   #Productos .products-preview .preview.active .buttons a{
+      font-size: 2rem;
+   }
+}
 
+@media (max-width:450px){
    #Productos .products-container .product img{
       width: 78%;
       height: 42%;
@@ -251,4 +325,43 @@
       font-size: 2.4rem;
   }
 
+}
+
+@media screen and (max-width:390px){
+   #Productos .products-preview .preview img {
+      height: 10vh;
+  }
+   #Productos .products-preview .preview.active h3{
+      font-size: 2rem;
+   }
+   #Productos .products-preview .preview.active .price{
+      font-size: 2rem;
+   }
+   #Productos .products-preview .preview.active p {
+      font-size: 1.8rem;
+  }
+   #Productos .products-preview .preview.active .buttons a{
+      font-size: 1.9rem;
+   }
+}
+
+@media screen and (max-width:375px){
+   #Productos .products-preview .preview.active .price{
+      font-size: 1.5rem;
+   }
+   #Productos .products-preview .preview.active p {
+      font-size: 1.4rem;
+  }
+   #Productos .products-preview .preview.active .buttons a{
+      font-size: 1.1rem;
+   }
+   #Productos .products-preview .preview .buttons {
+      gap: 1.1rem;
+   }
+}
+
+@media screen and (max-width:360px){
+   #Productos .products-preview .preview.active .buttons a{
+      font-size: 1.4rem;
+   }
 }

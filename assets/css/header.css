@@ -169,11 +169,6 @@ header img,
     background-color: rgba(72, 159, 83, 0.5);
 }
 
-#texto1 {
-    position: absolute;
-    left: 22%;
-    padding: 10px;
-}
 .st{
     width: 20%;
     transition: 2s;
@@ -238,93 +233,36 @@ header img,
     background-color: #5b9362;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1024px) {
+    header nav a {
+        font-size: 1.44rem;
+    }
 
-    /* Inicio*/
+    #Inicio .frase {
+        font-size: 4rem;
+      }
     .contenedor-imagen-frase {
         width: 100%; /* Ancho deseado del contenedor */
+        height: 30vh;
+        padding-bottom: 2rem;
     }
-
-
     .Carrusel{
-        height: 45vh;
+        height: 55vh;
     }
     .Carrusel img {
-        max-width: 100%;
-        height: 250px;
+        height: 45vh;
     }
     .Carrusel .slider{
-        max-width: 100%;
-        height: 255px;
-    }
-    .Carrusel .nav-m, .Carrusel .nav-auto{
-        width: 88%;
+        height: 50vh;
     }
     .Carrusel .nav-auto{
-        margin-top: 200px;
+        margin-top: 42vh;
     }
     .Carrusel .slide{
-        height: 240px;
+        height: 45vh;
     }
-    .Carrusel .st {
-        flex: 0 0 auto;
-      }
-   
-}
-
-/* @media screen and (max-width: 1000px) {
-    Header 
-    .wrapper {
-        display: block;
-    }
-    header .logo,
-    header nav {
-        width: 100%;
-        text-align: center; Centramos el menú y el logotipo 
-        line-height: 3.125rem;  50px 
-        font-size: 0.5rem;
-    }
-    header nav a{
-        font-size: 3rem;
-    }
-    header img{
-        width: 28rem;
-        height: auto;
-    }
-    .header2 img{
-        width: 15rem;
-        height: auto;
-    }
-
-    .header2 {
-        height: auto;
-        width: 100%;
-    }
-
-    .header2 .logo,
-    .header2 nav {
-        line-height: 3.125rem; 
-    }
-}  */
-
-/*@media screen and (max-width: 540px){
-    .contenedor-imagen-frase {
-        width: 100%;  Ancho deseado del contenedor 
-    }
-    header img{
-        height: 22rem;
-        width: 21rem;
-    }
-    header nav a{
-        font-size: 3rem;
-    }
-    .frase {
-        font-size: 2.4rem;
-        top: 5rem;
-    }
-    .Carrusel .texto{
-        top: 69%;
-        font-size: 2rem;
+    .Carrusel .texto {
+        font-size: 2.5rem;
     }
 }
 
@@ -433,4 +371,134 @@ header img,
     margin: 1rem 0; /* Margen de 1rem arriba y abajo de la imagen en dispositivos móviles */
 }
 
+}
+
+@media screen and (max-width: 950px) {
+    header nav a {
+        font-size: 3.5rem;
+    }
+
+    /* Inicio*/
+    #Inicio .frase{
+        font-size: 6rem;
+    }
+    .contenedor-imagen-frase {
+        width: 100%; /* Ancho deseado del contenedor */
+        height: 33vh;
+        padding-bottom: 2rem;
+    }
+
+    .Carrusel{
+        height: 35vh;
+    }
+    .Carrusel img {
+        max-width: 100%;
+        height: 30vh;
+    }
+    .Carrusel .slider{
+        max-width: 80%;
+        height: 35vh;
+    }
+    .Carrusel .nav-m, .Carrusel .nav-auto{
+        width: 88%;
+    }
+    .Carrusel .nav-auto{
+        margin-top: 27.5vh;
+    }
+    .Carrusel .slide{
+        height: 31vh;
+    }
+    .Carrusel .st {
+        flex: 0 0 auto;
+      }
+    .Carrusel .texto {
+        font-size: 3.3rem;
+        top:20vh;
+    }
+   
+}
+
+@media screen and (max-width: 540px){
+    header nav a{
+        font-size: 3.5rem;
+    }
+
+    #Inicio .frase {
+        font-size: 4rem;
+    }
+    .contenedor-imagen-frase {
+        width: 100%;  /*Ancho deseado del contenedor*/
+        height: 53vh;
+    }
+    .contenedor-imagen-frase img {
+        width: 100%;
+        height: 46vh;
+        object-fit: cover;
+    }
+
+    .Carrusel{
+        height:63vh;
+    }
+    .Carrusel img {
+        height: 49vh;
+    }
+    .Carrusel .slider{
+        max-width: 80%;
+        height: 50vh;
+    }
+    .Carrusel .slide{
+        height: 52vh;
+    }
+    .Carrusel .nav-auto{
+        margin-top: 46.5vh;
+    }
+    .Carrusel .texto {
+        font-size: 2.3rem;
+        top: 38vh;
+    }
+}
+
+@media screen and (max-width: 430px){
+    #Inicio .frase {
+        font-size: 3.5rem;
+    }
+    .Carrusel .slide{
+        height: 51vh;
+    }
+}
+
+@media screen and (max-width: 390px){
+    #Inicio .frase {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 280px){
+    header nav a{
+        font-size: 1.5rem;
+    }
+    .contenedor-imagen-frase {
+        padding-top: 5rem;
+    }
+    #Inicio .frase {
+        font-size: 2.3rem;
+    }
+
+    .Carrusel{
+        height:64vh;
+    }
+    .Carrusel .slider {
+        max-width: 80%;
+        height: 42vh;
+    }
+    .Carrusel .slide {
+        height: 42vh;
+    }
+    .Carrusel .nav-auto {
+        margin-top: 35.7vh;
+    }
+    .Carrusel .texto {
+        font-size: 2rem;
+        top: 22vh;
+    }
 }
